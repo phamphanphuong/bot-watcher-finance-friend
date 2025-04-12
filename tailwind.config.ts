@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				profit: {
+					DEFAULT: '#10B981', // emerald-500
+					muted: '#D1FAE5', // emerald-100
+					foreground: '#FFFFFF'
+				},
+				loss: {
+					DEFAULT: '#EF4444', // red-500
+					muted: '#FEE2E2', // red-100
+					foreground: '#FFFFFF'
+				},
+				neutral: {
+					DEFAULT: '#6B7280', // gray-500
+					muted: '#F3F4F6', // gray-100
+					foreground: '#FFFFFF'
 				}
 			},
 			borderRadius: {
@@ -84,11 +100,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-subtle': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-subtle': 'pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},
