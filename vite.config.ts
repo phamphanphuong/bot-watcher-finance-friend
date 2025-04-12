@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: "/bot-watcher-finance-friend/", // ✅ Quan trọng
   plugins: [
     react(),
     mode === 'development' &&
